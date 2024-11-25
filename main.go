@@ -1,8 +1,8 @@
 package main
 
 import (
-	bufferedChannels "github.com/suryasaputra2016/concurrency-review/3_buffered_channels"
 	usingchannels "github.com/suryasaputra2016/concurrency-review/3_using_channels"
+	bufferedChannels "github.com/suryasaputra2016/concurrency-review/4_buffered_channels"
 )
 
 func main() {
