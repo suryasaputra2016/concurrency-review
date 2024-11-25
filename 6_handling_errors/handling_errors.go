@@ -1,14 +1,15 @@
-package selectwithchannels
+package handlingerrors
 
 import "fmt"
 
 // SelectWIthChannels print numbers 1 t 20 and also information wether they are odd of even
-func SelectWithChannels() {
+func HandlingErrors() {
 	odd := make(chan int)
 	even := make(chan int)
+	err := make(chan int)
 	done := make(chan int)
 
-	go sendNumbers(odd, even, done)
+	go sendNumbers(odd, even, err, done)
 
 	for {
 		select {
@@ -24,9 +25,11 @@ func SelectWithChannels() {
 
 // sendNumbers send number from 1 to 20
 // it sends odd number and even numbers to their respective channel
-func sendNumbers(odd, even, done chan int) {
+func sendNumbers(odd, even, err, done chan int) {
 	for i := 1; i <= 20; i++ {
-		if i%2 == 1 {
+		if i > 20 {
+			err <- i
+		} else if i%2 == 1 {
 			odd <- i
 		} else {
 			even <- i

@@ -1,4 +1,4 @@
-package bufferedChannels
+package bufferedchannels
 
 import "fmt"
 
