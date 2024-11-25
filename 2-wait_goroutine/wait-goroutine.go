@@ -1,4 +1,4 @@
-package basicgoroutine
+package waitgoroutine
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 
 // BasicGoroutine call printNumbers and printLetters concurrently
 // wait for them to finish before exiting
-func BasicGoroutine() {
+func WaitGoroutine() {
 	var wg sync.WaitGroup
 
 	wg.Add(2)
