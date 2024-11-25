@@ -1,17 +1,17 @@
 package main
 
 import (
-	basicgoroutine "github.com/suryasaputra2016/concurrency-review/1-basic-goroutine"
-	waitgoroutine "github.com/suryasaputra2016/concurrency-review/2-wait-goroutine"
+	usingchannels "github.com/suryasaputra2016/concurrency-review/3_using_channels"
 )
 
 func main() {
 	// 1
-	basicgoroutine.BasicGoroutine()
+	// basicgoroutine.BasicGoroutine()
 
 	// 2
-	waitgoroutine.WaitGoroutine()
+	// waitgoroutine.WaitGoroutine()
 
 	// 3
+	usingchannels.UsingChannels()
 
 }
