@@ -2,6 +2,7 @@ package usingchannels
 
 import "fmt"
 
+// UsingChannels call consumer and producer funftions concurrently and wait for them to finish
 func UsingChannels() {
 	stream := make(chan int)
 	done := make(chan int)

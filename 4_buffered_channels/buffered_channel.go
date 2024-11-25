@@ -2,6 +2,7 @@ package bufferedChannels
 
 import "fmt"
 
+// BufferedChannels call consumer and producer funftions concurrently and wait for them to finish
 func BufferedChannels() {
 	stream := make(chan int, 5)
 	done := make(chan int)

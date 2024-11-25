@@ -1,8 +1,7 @@
 package main
 
 import (
-	usingchannels "github.com/suryasaputra2016/concurrency-review/3_using_channels"
-	bufferedChannels "github.com/suryasaputra2016/concurrency-review/4_buffered_channels"
+	selectwithchannels "github.com/suryasaputra2016/concurrency-review/5_select_with_channels"
 )
 
 func main() {
@@ -13,9 +12,12 @@ func main() {
 	// waitgoroutine.WaitGoroutine()
 
 	// 3
-	usingchannels.UsingChannels()
+	// usingchannels.UsingChannels()
 
 	// 4
-	bufferedChannels.BufferedChannels()
+	// bufferedChannels.BufferedChannels()
+
+	// 4
+	selectwithchannels.SelectWithChannels()
 
 }
